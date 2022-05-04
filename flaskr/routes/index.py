@@ -1,15 +1,16 @@
 import flask
-import datetime
+
+from flaskr.core.utils import (
+    get_current_year
+)
 
 blueprint = flask.Blueprint(name='index', import_name=__name__)
 
 
 @blueprint.get('/')
 def index():
-    current_year = datetime.datetime.now().year
-
     render_args = {
-        'year': current_year
+        'year': get_current_year()
     }
 
     return flask.render_template('index.html', **render_args), 200
