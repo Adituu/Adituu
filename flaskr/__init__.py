@@ -11,8 +11,7 @@ from werkzeug.exceptions import (
 from flaskr.core.settings import settings
 
 from flaskr.routes import (
-    index,
-    error
+    index
 )
 
 from flaskr.core.errors import (
@@ -35,7 +34,6 @@ def create_app():
 
     # Blueprints
     app.register_blueprint(index.blueprint)
-    app.register_blueprint(error.blueprint)
 
     # Error handlers
     app.register_error_handler(HTTPException, http_exception_error)
