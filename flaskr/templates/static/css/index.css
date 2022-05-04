@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+
+    /*
+    Idk, for now i'm searching for a cool gif.
+
+    background-image: url('/static/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    */
+    
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+    text-align: center;
+}
+
+.container h3 {
+    color: white;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-decoration: 3px #00d9ff underline;
+}
+
+.container h3 i {
+    font-size: 28px;
+    color: #00d9ff;
+}
+
+.container p {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+
+.container p a {
+    text-decoration: underline;
+    color: #00d9ff;
+}
+
+.container p a:hover {
+    color: #00d9ff;
+    transition: 0.9s;
+}
+
+.container p i {
+    font-size: 18px;
+    color: #00d9ff;
+}
+
+footer {
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+footer p {
+    font-size: 17px;
+    color: white;
+}
+
+footer p a {
+    text-decoration: underline;
+    color: #00d9ff;
+}
