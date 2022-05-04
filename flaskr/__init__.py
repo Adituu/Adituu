@@ -4,7 +4,8 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 
 from werkzeug.exceptions import (
     HTTPException,
-    NotFound
+    NotFound,
+    InternalServerError
 )
 
 from flaskr.core.settings import settings
@@ -15,7 +16,9 @@ from flaskr.routes import (
 )
 
 from flaskr.core.errors import (
-    http_exception_error
+    http_exception_error,
+    internal_error,
+    not_found_error
 )
 
 
@@ -36,5 +39,8 @@ def create_app():
 
     # Error handlers
     app.register_error_handler(HTTPException, http_exception_error)
+    app.register_error_handler(InternalServerError, internal_error)
+    app.register_error_handler(NotFound, not_found_error)
+    app.register_error_handler(Exception, internal_error)
 
     return app
