@@ -24,12 +24,12 @@ body {
 }
 
 body h1 {
-    font-size: 30px;
+    font-size: 28px;
     border-image: linear-gradient(to right, #1a33f0, #009dff);
     border-image-slice: 1;
     border-bottom: 3px solid transparent;
     width: fit-content;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-left: 12.5px;
 }
 
@@ -40,7 +40,7 @@ body h1 {
 }
 
 .main-container h2 {
-    font-size: 24px;
+    font-size: 26px;
     color: white;
     border-image: linear-gradient(to right, #1a33f0, #009dff);
     border-image-slice: 1;
@@ -49,23 +49,22 @@ body h1 {
 
 .main-container ul li {
     color: white;
-    font-size: 19px;
+    font-size: 20px;
     list-style: none;
 }
 
 .main-container ul li i {
-    font-size: 18px;
-    color: #1a33f0;
+    font-size: 20px;
+    background-image: linear-gradient(to left, #1a33f0, #009dff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-repeat: repeat;
+    color: transparent;
 }
 
 .main-container ul li .li-data {
-    font-size: 18px;
-    color: #1a33f0;
-    font-family: 'Padauk', sans-serif;
-    font-weight: 600;
-}
-
-.main-container ul li .pr-l {
+    font-size: 21px;
+    font-family: 'Karla', sans-serif;
     background-image: linear-gradient(to right, #1a33f0, #009dff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -74,6 +73,8 @@ body h1 {
 }
 
 .main-container ul li a:hover {
-    color: #009dff;
-    transition: .9s;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 21px;
+    letter-spacing: 1.5px;
+    background-image: linear-gradient(to left, #1a33f0, #009dff);
 }
