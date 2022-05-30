@@ -1,100 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #0a0a0a;
-
-    /*
-    Idk, for now i'm searching for a cool gif.
-
-    background-image: url('/static/img/background.jpg');
+    font-family: 'Yantramanav', sans-serif;
+    background-image: url('/static/img/background.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    */
-    
-    display: flex;
-    min-height: 100vh;
-    font-family: 'Yantramanav', sans-serif;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
-.title {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    height: 100%;
-    width: 100%;
-    margin-left: 10px;
-    margin-top: -10px;
-}
-
-.title h2 {
+.navbar .navbar-brand {
     color: white;
     font-size: 30px;
-    letter-spacing: 2px;
-    font-family: 'Karla', sans-serif;
-}
-
-.container {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-55%);
-    text-align: center;
-}
-
-.container h3 {
-    color: white;
-    font-size: 32px;
     letter-spacing: 1px;
-    text-decoration: 3px #00d9ff underline;
-}
-
-.container h3 i {
-    font-size: 28px;
-    color: #00d9ff;
-}
-
-.container p {
-    color: white;
-    font-size: 18px;
-    text-align: left;
+    font-weight: 500;
     font-family: 'Karla', sans-serif;
-    text-align: center;
 }
 
-.container p a {
-    text-decoration: underline;
-    color: #00d9ff;
+body h1 {
+    font-size: 30px;
+    border-image: linear-gradient(to right, #1a33f0, #009dff);
+    border-image-slice: 1;
+    border-bottom: 3px solid transparent;
+    width: fit-content;
+    margin-bottom: 25px;
+    margin-left: 12.5px;
 }
 
-.container p a:hover {
-    color: #00d9ff;
-    transition: 0.9s;
+@media screen and (max-width: 650px) {
+    body h1 {
+        border: none;
+    }
 }
 
-.container p i {
-    font-size: 18px;
-    color: #00d9ff;
-}
-
-footer {
-    text-align: center;
-    padding: 2px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-footer p {
-    font-size: 17px;
+.main-container h2 {
+    font-size: 24px;
     color: white;
+    border-image: linear-gradient(to right, #1a33f0, #009dff);
+    border-image-slice: 1;
+    border-bottom: 3px solid transparent;
 }
 
-footer p a {
-    text-decoration: underline;
-    color: #00d9ff;
+.main-container ul li {
+    color: white;
+    font-size: 19px;
+    list-style: none;
+}
+
+.main-container ul li i {
+    font-size: 18px;
+    color: #1a33f0;
+}
+
+.main-container ul li .li-data {
+    font-size: 18px;
+    color: #1a33f0;
+    font-family: 'Padauk', sans-serif;
+    font-weight: 600;
+}
+
+.main-container ul li .pr-l {
+    background-image: linear-gradient(to right, #1a33f0, #009dff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-repeat: repeat;
+    color: transparent;
+}
+
+.main-container ul li a:hover {
+    color: #009dff;
+    transition: .9s;
 }

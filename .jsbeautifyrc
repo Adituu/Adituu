@@ -1,4 +1,5 @@
 {
-    "tab_size": 4,
-    "end_with_newline": true
+    "end_with_newline": true,
+    "indent_size": 4,
+    "wrap_line_length": 120
 }
