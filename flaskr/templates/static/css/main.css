@@ -23,14 +23,25 @@ body {
     font-family: 'Karla', sans-serif;
 }
 
-body h1 {
+.navbar #change-theme {
     font-size: 28px;
-    border-image: linear-gradient(to right, #1a33f0, #009dff);
-    border-image-slice: 1;
-    border-bottom: 3px solid transparent;
-    width: fit-content;
+    background-image: linear-gradient(to right, #1a33f0, #009dff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-repeat: repeat;
+    color: transparent;
+    cursor: pointer;
+}
+
+.navbar #change-theme:hover {
+    background-image: linear-gradient(to right, #880005, #ff0004);
+    transition: .9s all;
+}
+
+body h1 {
+    font-size: 25px;
+    font-family: 'Tiro Bangla', serif;
     margin-bottom: 30px;
-    margin-left: 12.5px;
 }
 
 @media screen and (max-width: 650px) {
@@ -40,7 +51,7 @@ body h1 {
 }
 
 .main-container h2 {
-    font-size: 26px;
+    font-size: 25px;
     color: white;
     border-image: linear-gradient(to right, #1a33f0, #009dff);
     border-image-slice: 1;
@@ -49,8 +60,9 @@ body h1 {
 
 .main-container ul li {
     color: white;
-    font-size: 20px;
+    font-size: 19.5px;
     list-style: none;
+    letter-spacing: 1px;
 }
 
 .main-container ul li i {
@@ -63,7 +75,7 @@ body h1 {
 }
 
 .main-container ul li .li-data {
-    font-size: 21px;
+    font-size: 20px;
     font-family: 'Karla', sans-serif;
     background-image: linear-gradient(to right, #1a33f0, #009dff);
     -webkit-background-clip: text;
@@ -74,7 +86,7 @@ body h1 {
 
 .main-container ul li a:hover {
     font-family: 'Yantramanav', sans-serif;
-    font-size: 21px;
+    font-size: 19px;
     letter-spacing: 1.5px;
     background-image: linear-gradient(to left, #1a33f0, #009dff);
 }

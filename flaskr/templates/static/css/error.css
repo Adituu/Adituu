@@ -27,7 +27,7 @@ body {
 }
 
 .main-container .error-data .error-message {
-    color: #00d9ff;
+    color: white;
     font-size: 30px;
     letter-spacing: 2.5px;
 }
