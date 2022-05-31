@@ -2,10 +2,6 @@ import flask
 import logging
 import sys
 
-from flaskr.core.utils import (
-    get_current_year
-)
-
 logger = logging.getLogger('flaskr.errors')
 logger.setLevel(logging.INFO)
 
@@ -22,7 +18,6 @@ def http_exception_error(error):
     logger.error(error)
 
     render_args = {
-        'year': get_current_year(),
         'error_code': error.code if error.code else 500,
         'error_message': error.__cause__ if error.__cause__ else 'Http exception error'
     }
@@ -34,7 +29,6 @@ def internal_error(error):
     logger.error(error)
 
     render_args = {
-        'year': get_current_year(),
         'error_code': 500,
         'error_message': error.__cause__ if error.__cause__ else 'Internal error'
     }
@@ -46,7 +40,6 @@ def not_found_error(error):
     logger.error(error)
 
     render_args = {
-        'year': get_current_year(),
         'error_code': 404,
         'error_message': error.__cause__ if error.__cause__ else 'Not found'
     }
