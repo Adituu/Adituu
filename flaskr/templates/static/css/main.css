@@ -41,13 +41,7 @@ body {
 body h1 {
     font-size: 25px;
     font-family: 'Tiro Bangla', serif;
-    margin-bottom: 30px;
-}
-
-@media screen and (max-width: 650px) {
-    body h1 {
-        border: none;
-    }
+    margin-bottom: 15px;
 }
 
 .main-container h2 {
