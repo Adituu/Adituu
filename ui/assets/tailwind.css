@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.background-gradient {
+		background-image: radial-gradient(circle 740px at 5.2% 10.6%, rgba(5, 8, 114, 1) 0%, rgba(7, 3, 53, 1) 97.5%);
+	}
+
+	.background-project-card {
+		background-image: radial-gradient(circle 740px at 5.2% 10.6%, rgba(5, 8, 114, 1) 0%, rgba(9, 29, 85, 1) 97.5%);
+
+		box-shadow: -1.7px -4.1px 1.6px rgba(0, 0, 0, 0.018), -2.7px -6.5px 3.5px rgba(0, 0, 0, 0.026),
+			-2.7px -6.4px 5.9px rgba(0, 0, 0, 0.032), -1.2px -2.8px 9.6px rgba(0, 0, 0, 0.038), 2.6px 6.2px 15.7px rgba(0, 0, 0, 0.044),
+			10.9px 26px 27.8px rgba(0, 0, 0, 0.052), 38px 91px 73px rgba(0, 0, 0, 0.07);
+	}
+
+	.navbar-toggler {
+		@apply relative w-7 h-6 cursor-pointer flex flex-col items-center justify-center gap-1 duration-300 ml-auto sm:hidden;
+	}
+
+	.navbar-toggler .bars {
+		@apply w-full h-1 bg-color_logo duration-300 rounded-md;
+	}
+
+	#navbarToggle:checked + .navbar-toggler .bars {
+		@apply ml-3;
+	}
+
+	#navbarToggle:checked + .navbar-toggler #bar2 {
+		transform: rotate(135deg);
+		margin-left: 0;
+		transform-origin: center;
+		transition-duration: 0.3s;
+	}
+
+	#navbarToggle:checked + .navbar-toggler #bar1 {
+		transform: rotate(45deg);
+		transition-duration: 0.3s;
+		transform-origin: left center;
+	}
+
+	#navbarToggle:checked + .navbar-toggler #bar3 {
+		transform: rotate(-45deg);
+		transition-duration: 0.3s;
+		transform-origin: left center;
+	}
+
+	#navbarList li {
+		@apply hover:text-color_logo transition-colors duration-700 flex flex-row space-x-1 items-center justify-start sm:justify-center;
+	}
+}

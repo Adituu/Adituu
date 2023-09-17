@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Adrian G.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Josefin+Sans&family=Mukta&family=DM+Sans&family=Prompt&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.jpg') }}">
+
+    <!-- CDN Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>adituu.dev | {{ error_code }}</title>
+</head>
+
+<body>
+    <main class="bg-background flex flex-col min-h-screen">
+        <nav class="backdrop-blur-md sticky top-0">
+            <div class="flex flex-col p-2 sm:flex-row">
+                <div class="flex flex-row relative">
+                    <h2 class="text-headers font-medium text-[23px] font-logo tracking-wide">adituu.dev</h2>
+                </div>
+            </div>
+        </nav>
+
+        <div id="error-container" class="px-2 min-h-full flex flex-grow items-center justify-center">
+            <section class="flex justify-center items-center flex-col pb-32">
+                <div
+                    class="text-headers font-header font-medium text-8xl sm:text-9xl md:text-[140px] mb-6 cursor-default inline-flex tracking-widest">
+                    <span class="animate__animated animate__bounce">
+                        {% set error_code_string = error_code|string %}
+                        {{ error_code_string[0] }}
+                    </span>
+                    <span class="animate__animated animate__bounce animate__delay-1s">
+                        {% set error_code_string = error_code|string %}
+                        {{ error_code_string[1] }}
+                    </span>
+                    <span class="animate__animated animate__bounce animate__delay-2s">
+                        {% set error_code_string = error_code|string %}
+                        {{ error_code_string[2] }}
+                    </span>
+                </div>
+
+                <p
+                    class="text-text font-paragraph font-medium text-[20px] sm:text-[27px] md:text-[30px] tracking-widest">
+                    {{ error_message }}
+                </p>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

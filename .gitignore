@@ -1,0 +1,7 @@
+__pycache__/
+.env
+deploy.sh
+log/
+.venv/
+nginx.server.conf
+ui/assets/css/style.css

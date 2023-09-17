@@ -1,0 +1,19 @@
+{
+	"name": "adituu.com-ui",
+	"version": "1.0.0",
+	"description": "UI files for adituu.com",
+	"main": "index.js",
+	"scripts": {
+		"tailwindDev": "npx tailwindcss -i ./assets/tailwind.css -o ./assets/css/style.css -w -m",
+		"tailwindProd": "npx tailwindcss -i ./assets/tailwind.css -o ./assets/css/style.css -m",
+		"syncWithWebsiteRepository": "npx syncdir"
+	},
+	"author": "Adriann",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.3.3"
+	},
+	"dependencies": {
+		"sync-directory": "^6.0.4"
+	}
+}

@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  adituu.dev:
+    image: adituu.dev
+    build: .
+    container_name: 'adituu.dev'
+    volumes:
+      - ./log:/adituu.dev/log:rw
+    network_mode: host

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Adrian G.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Jost&family=Space+Grotesk:wght@500&family=Work+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>adituu.dev</title>
+</head>
+
+<body>
+    <main class="background-gradient flex flex-col min-h-screen">
+        <!-- Navbar Outer -->
+        <nav class="backdrop-blur-md sticky top-0 px-3 sm:px-6">
+            <!-- Navbar Inner -->
+            <div class="flex flex-col items-center py-2 sm:flex-row">
+                <div class="w-full flex flex-row items-center justify-center sm:justify-start">
+                    <h2 class="font-logo text-color_logo text-[25px] tracking-wide">
+                        adituu<span class="text-white">.com</span>
+                    </h2>
+
+                    <!-- 
+                        Credits for this go to: https://uiverse.io/vinodjangid07/unlucky-emu-32
+                    -->
+                    <input type="checkbox" id="navbarToggle" class="hidden">
+                    <label for="navbarToggle" class="navbar-toggler">
+                        <span class="bars" id="bar1"></span>
+                        <span class="bars" id="bar2"></span>
+                        <span class="bars" id="bar3"></span>
+                    </label>
+                </div>
+
+                <ul id="navbarList"
+                    class="w-full hidden font-headers font-semibold text-color_paragraph text-[16px] space-y-2 p-0 animate-fadein sm:w-fit sm:visible sm:flex sm:flex-row sm:ml-auto sm:space-x-8 sm:space-y-0 sm:text-[18px] sm:animate-none">
+
+                    <li>
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                        <a class="" href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <a href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Home -->
+        <header id="home" class="flex-grow min-h-screen px-2 pt-28 sm:pt-40">
+            <section class="flex flex-col space-y-3">
+                <h2
+                    class="font-main_header font-medium cursor-default text-color_header text-4xl sm:text-5xl lg:text-6xl">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Hi, I'm Adrian.
+                </h2>
+
+                <div
+                    class="flex flex-col font-general font-medium text-color_paragraph space-y-2 text-[16.5px] sm:text-[18.5px] lg:text-[20.5px] lg:w-5/6">
+                    <p>
+                        <i class="fa fa-circle-o text-color_logo" aria-hidden="true"></i>
+                        I'm a self-taught 19 years old developer and IT enthuziast from Romania.
+                    </p>
+
+                    <p>
+                        <i class="fa fa-circle-o text-color_logo" aria-hidden="true"></i>
+                        I love what I'm doing and I will never stop programming or learning new things about
+                        programming.
+                    </p>
+
+                    <p>
+                        <i class="fa fa-circle-o text-color_logo" aria-hidden="true"></i>
+                        Currently, I like doing this as a hobby and because I'm fascinated by things you can do writing
+                        code. But who knows, maybe one day
+                        I will get a nice paid job or one of my project or code will solve some problems. 🙂
+                    </p>
+                </div>
+            </section>
+        </header>
+
+        <!-- Contact -->
+        <section id="contact" class="flex-grow inline-flex min-h-screen px-2 pt-28 sm:pt-36">
+            <div class="flex flex-col space-y-3">
+                <h2
+                    class="w-fit border-b-2 border-b-white pr-6 cursor-default font-headers text-color_header text-4xl sm:text-5xl lg:text-6xl">
+                    <i class="fa fa-phone"></i>
+                    Contact
+                </h2>
+
+                <p class="w-fit font-general text-color_paragraph text-[16.5px] sm:text-[18.5px] lg:text-[20.5px]">
+                    <i class="fa fa-circle-o text-color_logo" aria-hidden="true"></i>
+                    You can contact me via email, telegram, discord or you can visit my github profile.
+                </p>
+
+                <div class="w-fit flex flex-col items-start justify-start gap-y-3 md:flex-row md:gap-y-0 md:gap-x-3.5">
+                    <a class="bg-red-600 w-40 px-8 pt-4 pb-[19.5px] flex items-center justify-center hover:bg-red-800 hover:scale-105 transition-all duration-700"
+                        href="mailto:adriang11@tutanota.com"><i class="fa fa-envelope text-2xl"></i></a>
+
+                    <a class="bg-zinc-700 w-40 px-8 py-4 flex items-center justify-center hover:bg-zinc-800 hover:scale-105 transition-all duration-700"
+                        href="https://github.com/Adituu"><i class="fa fa-github text-3xl"></i></a>
+
+                    <a class="bg-blue-600 w-40 px-8 py-4 flex items-center justify-center hover:bg-blue-800 hover:scale-105 transition-all duration-700"
+                        href="https://t.me/acyb01"><i class="fa fa-telegram text-3xl"></i></a>
+
+                    <a
+                        class="bg-indigo-600 w-40 px-8 py-4 flex items-center justify-center hover:bg-indigo-800 hover:scale-105 transition-all duration-700 hover:cursor-pointer"><i
+                            class="fa fa-discord text-3xl"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="flex-grow inline-flex min-h-screen px-2 pt-28 sm:pt-36">
+            <div class="w-fit flex flex-col space-y-6">
+                <h2
+                    class="w-fit border-b-2 border-b-white pr-6 cursor-default font-headers text-color_header text-4xl sm:text-5xl lg:text-6xl">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                    Projects
+                </h2>
+
+                <div class="grid grid-cols-1 grid-rows-1 grid-flow-dense gap-8 sm:grid-cols-3 sm:gap-12 md:gap-20 px-2">
+                    <div
+                        class="w-[190px] h-[254px] background-project-card rounded-lg hover:scale-105 transition-transform duration-700">
+
+                        <div class="flex items-center justify-center p-2">
+                            <div class="">
+                                <h2 class="text-color_logo font-main_header text-[16px]">~ anonpush.com ~</h2>
+                            </div>
+                        </div>
+
+                        <div class="font-main_header font-semibold text-color_header text-[18px] p-2">
+                            <p>
+                                Soon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w-full fixed backdrop-blur-sm bottom-0">
+            <div class="flex flex-row justify-center items-center px-2">
+                <p class="font-logo font-medium text-color_logo text-[13px] mr-auto sm:text-[17px]">
+                    Copyright &#169;
+                    <span id="copyright_date">2023</span> by <a
+                        class="font-general text-color_paragraph text-[13px] hover:text-color_header duration-500 sm:text-[18px] underline"
+                        href="https://github.com/Adituu"><i class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i>
+                        Adituu</a>
+                </p>
+
+                <a href="#home" class="ml-auto px-4 py-1 text-color_paragraph text-4xl"><i class="fa fa-arrow-circle-up"
+                        aria-hidden="true"></i></a>
+            </div>
+        </footer>
+        <!-- Footer -->
+    </main>
+</body>
+
+<script src="assets/js/indexPage.js" type="text/javascript"></script>
+<script src="assets/js/navbar.js" type="text/javascript"></script>
+
+</html>

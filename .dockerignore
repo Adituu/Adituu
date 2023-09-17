@@ -1,0 +1,10 @@
+__pycache__/
+.env.example
+deploy.sh
+deploy.example.sh
+nginx.server.conf
+README.md
+.vscode
+.gitignore
+log/
+.venv/
